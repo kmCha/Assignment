@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {
+	background-color: #D1FFFE;
+	margin: 20px;
+}
+
+#tabs{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+form{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.tableRow{
+	display: table-row;
+}
+
+div.tableRow p{
+	display: table-cell;
+	vertical-align: top;
+}
+
+div.tableRow p:first-child {
+	text-align: right;
+}

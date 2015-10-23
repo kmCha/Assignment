@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignments</title>
+	<script src="../scripts/jquery-2.1.4.js"></script>
+	<script src="../jquery-ui-1.11.4.km/jquery-ui.js"></script>
+	<script type="text/javascript" src="../scripts/kM.js"></script>
+	<script src="assignments.js"></script>
+	<link rel="stylesheet" type="text/css" href="../jquery-ui-1.11.4.km/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="assignments.css"></head>
+<body>
+	<div id="tabs">
+		<ul>
+			<li>
+				<a href="#all" id="allTab">All Assignments</a>
+			</li>
+			<li>
+				<a href="#toSubmit" id="toSubmitTab">Assignments to submit</a>
+			</li>
+			<li>
+				<a href="#add" id="addTab">Add assignment</a>
+			</li>
+		</ul>
+		<div id="all"></div>
+		<div id="toSubmit"></div>
+		<div id="add">
+			<form action="assignments.php" id="addAssignment" method="POST" name="addAssignment">
+				<div class="tableRow">
+					<p>
+						<label for="text1">Course Name:</label>
+					</p>
+					<p>
+						<input type="text" id="text1" name="course_name" class="addtext"></p>
+				</div>
+				<div class="tableRow">
+					<p>
+						<label for="text2">Course Code:</label>
+					</p>
+					<p>
+						<input type="text" id="text2" name="course_code" class="addtext"></p>
+				</div>
+				<div class="tableRow">
+					<p>
+						<label for="text3">Assignmen Name:</label>
+					</p>
+					<p>
+						<input type="text" id="text3" name="assignment_name"class="addtext"></p>
+				</div>
+				<div class="tableRow">
+					<p>
+						<label for="text4">Due Date:</label>
+					</p>
+					<p>
+						<input type="text" id="text4" name="due_date"class="addtext"></p>
+				</div>
+				<div class="tableRow">
+					<p></p>
+					<p>
+						<button id="submit" type="submit">Submit</button>
+					</p>
+				</div>
+				<input type="hidden" name="action" value="addAssignment" id="action"></form>
+		</div>
+	</div>
+</body>
+</html>
