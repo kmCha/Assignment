@@ -60,7 +60,6 @@ $(document).ready(function() {
 			});
 		});
 	}
-	function hhh(){ alert("aaa");}
 	function clearInputs() {
 		$("#text1").val('');
 		$("#text2").val('');
@@ -68,3 +67,4 @@ $(document).ready(function() {
 		$("#text4").val('');
 	}
 });
+function hhh(){ alert("aaa");}
