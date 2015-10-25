@@ -15,7 +15,7 @@ if($_GET){
   }
 }
 function db_connection($query) {
-		mysql_connect('127.0.0.1', 'assign_db_user', 'assign_db_password')
+		mysql_connect('127.0.0.1', 'root', 'Saber92759275')
 			OR die(fail('Could not connect to database.'));
 		mysql_select_db('assignments');
 
