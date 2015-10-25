@@ -10,7 +10,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$("#submit").button().click(addAssignment);
+	$("#submit").click(addAssignment);
 
 	function addAssignment() {
 		var data = $("#addAssignment input").serializeArray();
